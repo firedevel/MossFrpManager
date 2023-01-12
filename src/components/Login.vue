@@ -33,7 +33,7 @@ function login(){
         <input v-model="account" placeholder="QQ号"><br>
         <input type="password" v-model="passwd" placeholder="密码"><br>
         <a href="#">忘记密码？</a><br>
-        <button @click="login" class="btn btn-login float-right">登录</button>
+        <button @click="login()" class="btn btn-login float-right">登录</button>
     </div>
 </template>
 <style>
