@@ -23,15 +23,15 @@
     <table class="card-table">
     <thead>
       <tr>
+        <th>状态</th>
         <th>节点</th>
-        <th>节点状态</th>
         <th>节点负载</th>
       </tr>
     </thead>
     <tbody>
       <tr v-for="i in result">
+        <td><span :class="'waring-'+i.warning"></span></td>
         <td>{{ i.node }}</td>
-        <td>{{ i.warning }}</td>
         <td>{{ nresult[i.node].load }}</td>
       </tr>
     </tbody>
@@ -101,6 +101,16 @@
   color: #FFF;
   background-color: #3496fffa;
   box-shadow: 0 3px 10px #55a7ffcf;
+}
+.waring-true{
+  background-color: rgb(203, 127, 127);
+  padding: 5px;
+  border-radius: 2px;
+}
+.waring-false{
+  background-color: rgb(91, 166, 122);
+  padding: 5px;
+  border-radius: 2px;
 }
 
 @media (prefers-color-scheme: dark) {

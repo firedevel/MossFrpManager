@@ -1,9 +1,13 @@
 
 <template>
   <h1 class="page-title">管理隧道</h1>
-  <div class="card card-silver">
+  <div class="card card-silver" v-if="Math.floor(result[$attrs.id].stop - Date.parse(new Date())) > 0">
       <h3>剩余时长</h3>
       <h1>{{ Math.floor((result[$attrs.id].stop - Date.parse(new Date())) / 1000 / 60 / 60 / 24) }} 天</h1>
+  </div>
+  <div class="card card-gold" v-if="Math.floor(result[$attrs.id].stop - Date.parse(new Date())) < 0">
+      <h3>过期时长</h3>
+      <h1>{{ Math.abs(Math.floor((result[$attrs.id].stop - Date.parse(new Date())) / 1000 / 60 / 60 / 24)) }} 天</h1>
   </div>
   <br />
   <div class="ctrl-list">   
@@ -90,6 +94,9 @@ p{
 }
 .card-silver{
   background-color:#097cf631;
+}
+.card-gold{
+  background-color:#f0a40042;
 }
 </style>
 

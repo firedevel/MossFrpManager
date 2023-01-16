@@ -19,7 +19,7 @@
         <td>{{ i.node }}</td>
         <td>{{ i.address }}</td>
         <td>{{ i.price }}</td>
-        <td>{{ i.coin }}</td>
+        <td><span v-if="i.coin == 'mixed'" class="coin-mixed">金/银</span></td>
         <td>{{ i.load }}</td>
       </tr>
     </tbody>
@@ -36,6 +36,14 @@
 td svg{
   top: 2.5px; /*堆屎，高度补偿(居中)*/
   color: var(--color-svg);
+}
+.coin-mixed{
+  background-color: rgb(112, 173, 103);
+  color: #FFF;
+  font-size: 10px;
+  padding: 2px 3px;
+  border-radius: 5px;
+  font-weight: 700;
 }
 </style>
 <script setup>

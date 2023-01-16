@@ -6,18 +6,23 @@
   <table class="page-table">
     <thead>
       <tr>
+        <th>状态</th>
         <th>活动</th>
         <th>节点</th>
-        <th>节点状态</th>
+        <th>状态信息</th>
         <th>节点负载</th>
         <th></th>
       </tr>
     </thead>
     <tbody>
       <tr v-for="(i,key) in result">
+        <td><span :class="'waring-'+i.warning"></span></td>
         <td>{{ i.activity }}</td>
         <td>{{ i.node }}</td>
-        <td>{{ i.warning }}</td>
+        <td>
+          <p v-if="i.status == 'outdated'">过期</p>
+          <p v-if="i.status == 'run'">运行</p>
+        </td>
         <td>{{ nresult[i.node].load }}</td>
         <td><RouterLink :to="'/manage/'+key"><IconGear /></RouterLink></td>
       </tr>
@@ -36,6 +41,16 @@ td{
 }
 tr{
   white-space: nowrap;
+}
+.waring-true{
+  background-color: rgb(203, 127, 127);
+  padding: 5px;
+  border-radius: 2px;
+}
+.waring-false{
+  background-color: rgb(91, 166, 122);
+  padding: 5px;
+  border-radius: 2px;
 }
 </style>
 
