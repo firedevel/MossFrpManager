@@ -16,6 +16,10 @@
       <a>{{ result[$attrs.id].node }}</a>
     </div>
     <div>
+      <p>状态</p>
+      <a>{{ result[$attrs.id].status }}</a>
+    </div>
+    <div>
       <p>序列号</p>
       <a>{{ result[$attrs.id].number }}</a>
     </div>
@@ -28,8 +32,8 @@
       <a>{{ result[$attrs.id].activity }}</a>
     </div>
     <div>
-      <p>状态</p>
-      <a>{{ result[$attrs.id].status }}</a>
+      <p>带宽</p>
+      <a>{{ result[$attrs.id].band }} Mbps</a>
     </div>
   </div>
   <br />

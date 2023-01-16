@@ -17,7 +17,10 @@
     <tbody>
       <tr v-for="(i,key) in result">
         <td><span :class="'waring-'+i.warning"></span></td>
-        <td>{{ i.activity }}</td>
+        <td>
+          <p v-if="i.activity == 'true'">是</p>
+          <p v-if="i.activity == 'false'">否</p>
+        </td>
         <td>{{ i.node }}</td>
         <td>
           <p v-if="i.status == 'outdated'">过期</p>
