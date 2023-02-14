@@ -2,6 +2,9 @@
 <a href="https://mit-license.org/"><img src="https://img.shields.io/github/license/firedevel/MossFrpManager.svg"></a>
 <a href="https://github.com/firedevel/MossFrpManager/issues"><img src="https://img.shields.io/github/issues/firedevel/MossFrpManager.svg"></a>
 <a href="#"><img src="https://img.shields.io/github/last-commit/firedevel/MossFrpManager.svg"></a>
+<a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"></a>
+<a href="https://vuejs.org/"><img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"></a>
+
 
 A third-party manager for MossFrp
 
