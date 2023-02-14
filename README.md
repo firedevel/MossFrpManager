@@ -1,6 +1,6 @@
 # MossFrpManager
 <a href="https://mit-license.org/"><img src="https://img.shields.io/github/license/firedevel/MossFrpManager.svg"></a>
-<a href="/firedevel/MossFrpManager/issues"><img src="https://img.shields.io/github/issues/firedevel/MossFrpManager.svg">
+<a href="https://github.com/firedevel/MossFrpManager/issues"><img src="https://img.shields.io/github/issues/firedevel/MossFrpManager.svg">
 
 A third-party manager for MossFrp
 
