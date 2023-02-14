@@ -1,5 +1,5 @@
 # MossFrpManager
-<a href="https://mit-license.org/"><img src="https://img.shields.io/github/license/{username}/{repo-name}.svg"></a>
+<a href="https://mit-license.org/"><img src="https://img.shields.io/github/license/firedevel/MossFrpManager.svg"></a>
 
 A third-party manager for MossFrp
 
